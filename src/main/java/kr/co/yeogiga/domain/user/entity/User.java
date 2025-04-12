@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Entity(name = "user")
+@Entity(name = "users")
 @DynamicUpdate
 @SQLRestriction("deleted_at IS NULL")
 @SQLDelete(sql = "UPDATE user SET deleted_at = NOW() WHERE id = ?")
